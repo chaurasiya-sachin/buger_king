@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <div class="main">
+        <div class="heading">
+            <h1>Welcome to Fast Food Court</h1>            
+        </div>
+        <div class="menu">
+            <h2>Select your food</h2>
+            <form action="" class="food-form">
+                <div class="checkbox-group">
+                    
+                    <label for="burger"><input type="checkbox" name="food" id="burger" value="burger"> Burger</label>
+                    
+                    <label for="french-fries"><input type="checkbox" name="food" id="french-fries" value="french-fries"> French-fries</label>
+                    
+                    <label for="pizza"><input type="checkbox" name="food" id="pizza" value="pizza"> Pizza</label>
+                    
+                    <label for="roll"><input type="checkbox" name="food" id="roll" value="roll"> Roll</label>
+                </div>
+                <button type="button" id="order-btn">Order Now</button>
+            </form>
+        </div>
+        <!-- display order -->
+        <p id="orderId"></p>
+         <!-- For displaying selected foods -->
+        <div id="selected-foods"></div>
+        
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
